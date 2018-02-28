@@ -7,36 +7,27 @@ public class GraphicsTemplate extends JFrame {
 
     String title = "Graphics Template";
     Color background = Color.BLACK;
+    final int CIRCLE_COUNT = 20;
 
     void draw(Graphics2D g2) {
-        final int CIRCLE_COUNT = 100_000;
+        int red = 0;
+        int redShift = 255 / CIRCLE_COUNT;
 
-        final int RADIUS_MIN = 1;
-        final int RADIUS_MAX = 10;
+        int size = Math.min(getWidth(), getHeight());
+        int sizeShift = size / CIRCLE_COUNT;
 
-        final int RED_MIN = 0;
-        final int RED_MAX = 255;
-        final int GREEN_MIN = 0;
-        final int GREEN_MAX = 255;
-        final int BLUE_MIN = 0;
-        final int BLUE_MAX = 255;
-
-        int width = getWidth();
-        int height = getHeight();
+        int x = (getWidth() - size) / 2;
+        int y = (getHeight() - size) / 2;
 
         for (int i = 0; i < CIRCLE_COUNT; ++i) {
-            int radius = (int) (RADIUS_MIN + Math.random() * (RADIUS_MAX - RADIUS_MIN + 1));
-            int diameter = 2 * radius;
+            g2.setColor(new Color(red, 0, 0));
+            g2.fillRect(x, y, size, size);
 
-            int x = (int) (- radius + Math.random() * (width + radius + 1));
-            int y = (int) (- radius + Math.random() * (height + radius + 1));
+            red += redShift;
+            size -= sizeShift;
 
-            int red = (int) (RED_MIN + Math.random() * (RED_MAX - RED_MIN + 1));;
-            int green = (int) (GREEN_MIN + Math.random() * (GREEN_MAX - GREEN_MIN + 1));;
-            int blue = (int) (BLUE_MIN + Math.random() * (BLUE_MAX - BLUE_MIN + 1));;
-
-            g2.setColor(new Color(red, green, blue));
-            g2.fillOval(x, y, diameter, diameter);
+            x += sizeShift / 2;
+            y += sizeShift / 2;
         }
 
     }
