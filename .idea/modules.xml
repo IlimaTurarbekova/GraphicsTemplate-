@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Grahics/Grahics.iml" filepath="$PROJECT_DIR$/Grahics/Grahics.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCCME_Task_333/MCCME_Task_333.iml" filepath="$PROJECT_DIR$/MCCME_Task_333/MCCME_Task_333.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCCME_Task_334/MCCME_Task_334.iml" filepath="$PROJECT_DIR$/MCCME_Task_334/MCCME_Task_334.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCCME_Task_335/MCCME_Task_335.iml" filepath="$PROJECT_DIR$/MCCME_Task_335/MCCME_Task_335.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/Practice_04_Task_02/Practice_04_Task_02.iml" filepath="$PROJECT_DIR$/Practice_04_Task_02/Practice_04_Task_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practice_04_Task_04/Practice_04_Task_04.iml" filepath="$PROJECT_DIR$/Practice_04_Task_04/Practice_04_Task_04.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practice_04_Task_05/Practice_04_Task_05.iml" filepath="$PROJECT_DIR$/Practice_04_Task_05/Practice_04_Task_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice_05_Task_03/Practice_05_Task_03.iml" filepath="$PROJECT_DIR$/Practice_05_Task_03/Practice_05_Task_03.iml" />
     </modules>
   </component>
 </project>
